@@ -12,7 +12,7 @@ import (
 
 func main() {
   t := tcno.Random()
-  fmt.Printf("%v %T", t, t)     // int türünde
+  fmt.Printf("%v %T\n", t, t)     // int türünde
   if tcno.IsValid(t) {
     fmt.Println(t, "geçerli bir TC kimlik numarasıdır.")
   } else {
