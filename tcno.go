@@ -1,7 +1,7 @@
+// github.com/aydos/tcno
 package tcno
 
 import (
-	"fmt"
 	"math/rand"
 	"strconv"
 	"time"
@@ -51,6 +51,7 @@ func IsValid(tcno int) bool {
 }
 
 // Generate, ilk 9 hanesi verilen sayıdan TCNo üretir
+// Hatalı girdide 0-sıfır döner
 func Generate(tcbase int) int {
 	if tcbase < mintcbase || tcbase > maxtcbase {
 		return 0
